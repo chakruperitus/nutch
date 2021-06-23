@@ -270,10 +270,11 @@ public class HttpResponse implements Response {
 
       // handle with Selenium only if content type in HTML or XHTML
       if (contentType != null) {
-        if (contentType.contains("text/html")
-            || contentType.contains("application/xhtml")) {
-          readPlainContent(url);
-        } else {
+        //if (contentType.contains("text/html")
+        //    || contentType.contains("application/xhtml")) {
+        //  readPlainContent(url);
+        //} else {
+        {
           try {
             int contentLength = Integer.MAX_VALUE;
             String contentLengthString = headers.get(Response.CONTENT_LENGTH);
